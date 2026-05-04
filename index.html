@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Optimised: embedded base64 images/video extracted to /assets to reduce HTML file size. -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premier Outsourcing — Strata Staffing Proposal</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0D1F3C;--blue:#2A6BDE;--silver:#8A9BB5;--silver-l:#C5CEDB;
+  --silver-xl:#EEF1F6;--white:#fff;--off:#F4F6FA;--border:rgba(13,31,60,0.1);
+  --serif:'Bebas Neue',Impact,sans-serif;--sans:'DM Sans',sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--off);color:var(--navy);font-size:15px;line-height:1.6;font-weight:400}
+
+nav{position:sticky;top:0;z-index:100;background:var(--navy);display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;height:60px;border-bottom:1px solid rgba(42,107,222,.2)}
+.nav-logo img{height:34px;object-fit:contain;display:block}
+.nav-links{display:flex;gap:2rem}
+.nav-links a{color:rgba(255,255,255,.4);font-size:11px;text-decoration:none;letter-spacing:.08em;text-transform:uppercase;transition:color .2s;font-weight:500}
+.nav-links a:hover{color:#fff}
+.nav-cta{background:var(--blue);color:#fff;border:none;padding:8px 20px;border-radius:3px;font-size:11px;font-family:var(--sans);cursor:pointer;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.nav-cta:hover{opacity:.85}
+
+.hero-wrap{background:var(--navy);position:relative;overflow:hidden}
+.hero-wrap::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(42,107,222,.1) 0%,transparent 55%),linear-gradient(225deg,rgba(138,155,181,.05) 0%,transparent 45%)}
+.hero-wrap::after{content:'P';position:absolute;right:-1rem;top:50%;transform:translateY(-50%);font-family:var(--serif);font-size:380px;font-weight:600;color:rgba(255,255,255,.018);pointer-events:none;line-height:1}
+.hero{max-width:960px;margin:0 auto;padding:5rem 2.5rem 4.5rem;position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(42,107,222,.4);color:var(--blue);font-size:10px;font-weight:600;letter-spacing:.12em;padding:5px 14px;border-radius:2px;margin-bottom:2rem;text-transform:uppercase;background:rgba(42,107,222,.08)}
+.hero-badge::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--blue);flex-shrink:0}
+.hero h1{font-family:var(--serif);font-size:clamp(48px,6.5vw,80px);color:#fff;line-height:1;margin-bottom:1.25rem;font-weight:400;letter-spacing:.02em}
+.hero h1 em{color:var(--blue);font-style:normal}
+.hero-sub{font-size:16px;color:var(--silver);max-width:500px;margin-bottom:2rem;line-height:1.75;font-weight:400}
+.hero-div{width:44px;height:2px;background:var(--blue);margin-bottom:2.5rem}
+.hero-fields{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:540px;margin-bottom:3rem}
+.hf{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:3px;padding:10px 14px;transition:border-color .2s}
+.hf:focus-within{border-color:rgba(42,107,222,.5)}
+.hf label{display:block;font-size:10px;color:var(--silver);text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px;font-weight:500}
+.hf input{background:transparent;border:none;outline:none;font-size:14px;color:#fff;width:100%;font-family:var(--sans);font-weight:400}
+.hf input::placeholder{color:rgba(255,255,255,.2)}
+.hf input[type=date]{color-scheme:dark}
+.hero-stats{display:flex;gap:3rem;padding-top:2.5rem;border-top:1px solid rgba(255,255,255,.08)}
+.hs-num{font-family:var(--serif);font-size:44px;color:#fff;font-weight:400;display:block;line-height:1;letter-spacing:.02em}
+.hs-label{font-size:10px;color:var(--silver);margin-top:5px;text-transform:uppercase;letter-spacing:.07em;font-weight:400}
+
+.pillars-band{background:var(--blue);padding:1.25rem 2.5rem}
+.pillars{max-width:960px;margin:0 auto;display:flex;justify-content:space-around;align-items:center;gap:0}
+.pillar{text-align:center;color:#fff;padding:.4rem 1rem}
+.pillar-title{font-family:var(--serif);font-size:22px;letter-spacing:.04em;margin-bottom:2px}
+.pillar-desc{font-size:11px;color:rgba(255,255,255,.65);font-weight:400}
+.pillar-sep{width:1px;background:rgba(255,255,255,.2);align-self:stretch;margin:0}
+
+section{padding:5rem 2.5rem;max-width:960px;margin:0 auto}
+.eyebrow{font-size:10px;font-weight:600;letter-spacing:.14em;color:var(--blue);text-transform:uppercase;margin-bottom:.75rem}
+.sec-title{font-family:var(--serif);font-size:clamp(36px,4.5vw,60px);color:var(--navy);line-height:1;margin-bottom:1.25rem;font-weight:400;letter-spacing:.02em}
+.sec-title em{color:var(--blue);font-style:normal}
+.sec-div{width:40px;height:2px;background:var(--blue);margin-bottom:2rem}
+.sec-body{font-size:15px;color:var(--silver);line-height:1.8;max-width:580px;margin-bottom:2.5rem;font-weight:400}
+
+.divider-full{height:1px;background:var(--border)}
+
+.pain-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:6px;overflow:hidden;margin-bottom:2.5rem}
+.pain-item{background:#fff;padding:1.75rem;transition:background .2s;cursor:default}
+.pain-item:hover{background:var(--silver-xl)}
+.pain-num{font-family:var(--serif);font-size:34px;color:rgba(42,107,222,.12);line-height:1;margin-bottom:.5rem}
+.pain-title{font-size:13px;font-weight:600;color:var(--navy);margin-bottom:.4rem;letter-spacing:.02em;text-transform:uppercase}
+.pain-desc{font-size:13px;color:var(--silver);line-height:1.65;font-weight:400}
+
+.quote-block{border-left:3px solid var(--blue);padding:1.5rem 1.75rem;background:#fff}
+.quote-text{font-family:var(--sans);font-size:18px;color:var(--navy);line-height:1.65;font-style:italic;font-weight:300;margin-bottom:.6rem}
+.quote-attr{font-size:11px;color:var(--blue);letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+
+.sol-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:6px;overflow:hidden;margin-bottom:2.5rem}
+.sol-card{background:#fff;padding:1.5rem 1.75rem}
+.sol-label{font-size:10px;font-weight:600;color:var(--blue);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.5rem}
+.sol-card h3{font-family:var(--serif);font-size:24px;color:var(--navy);margin-bottom:.4rem;font-weight:400;letter-spacing:.02em}
+.sol-card p{font-size:13px;color:var(--silver);line-height:1.65;font-weight:400}
+
+.proc-list{border:1px solid var(--border);border-radius:6px;overflow:hidden;background:#fff}
+.proc-item{display:grid;grid-template-columns:56px 1fr;border-bottom:1px solid var(--border);cursor:pointer;transition:background .15s}
+.proc-item:last-child{border-bottom:none}
+.proc-item:hover{background:var(--silver-xl)}
+.proc-item.open{background:var(--silver-xl)}
+.proc-num-col{display:flex;align-items:flex-start;justify-content:center;padding-top:1.2rem;border-right:1px solid var(--border)}
+.proc-num{width:30px;height:30px;border-radius:50%;background:var(--silver-xl);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;color:var(--silver);transition:all .25s;border:1px solid var(--border)}
+.proc-item.open .proc-num{background:var(--blue);color:#fff;border-color:var(--blue)}
+.proc-body{padding:1.2rem 1.5rem}
+.proc-title{font-size:14px;font-weight:500;color:var(--navy);display:flex;justify-content:space-between;align-items:center}
+.proc-chev{font-size:11px;color:var(--silver-l);transition:transform .25s}
+.proc-item.open .proc-chev{transform:rotate(180deg);color:var(--blue)}
+.proc-desc{font-size:13px;color:var(--silver);line-height:1.7;margin-top:.6rem;display:none;font-weight:400}
+.proc-item.open .proc-desc{display:block}
+
+.invest-wrap{background:var(--navy);max-width:100%}
+.invest{max-width:960px;margin:0 auto;padding:5rem 2.5rem}
+.invest .eyebrow{color:var(--blue)}
+.invest .sec-title{color:#fff}
+.invest .sec-title em{color:var(--blue);font-style:normal}
+.invest .sec-body{color:var(--silver)}
+.invest .sec-div{background:var(--blue)}
+
+.price-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:3rem}
+.p-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:1.75rem;transition:border-color .2s}
+.p-card.featured{border-color:var(--blue);background:rgba(42,107,222,.1)}
+.p-rec{display:inline-block;background:var(--blue);color:#fff;font-size:10px;font-weight:600;padding:3px 10px;border-radius:2px;margin-bottom:.75rem;letter-spacing:.08em;text-transform:uppercase}
+.p-tier{font-size:11px;color:var(--silver);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.2rem;font-weight:400}
+.p-amt{font-family:var(--serif);font-size:44px;color:#fff;font-style:normal;margin:.3rem 0 .1rem;line-height:1;letter-spacing:.02em}
+.p-period{font-size:11px;color:var(--silver)}
+.p-desc{font-size:12px;color:var(--silver);margin:.85rem 0;line-height:1.6;padding-top:.85rem;border-top:1px solid rgba(255,255,255,.07);font-weight:400}
+.p-feats{display:flex;flex-direction:column;gap:7px}
+.pf{font-size:12px;color:var(--silver);display:flex;gap:8px;align-items:flex-start;font-weight:400}
+.pf-dot{width:5px;height:5px;border-radius:50%;background:var(--blue);flex-shrink:0;margin-top:5px}
+
+.roi-box{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:2rem}
+.roi-heading{font-size:11px;color:var(--silver);letter-spacing:.08em;text-transform:uppercase;margin-bottom:1.5rem;font-weight:500}
+.sl-row{display:flex;align-items:center;gap:1rem;margin-bottom:.85rem}
+.sl-label{font-size:12px;color:var(--silver);min-width:130px;font-weight:400}
+.sl-val{font-size:13px;font-weight:600;color:#fff;min-width:80px;text-align:right}
+input[type=range]{-webkit-appearance:none;flex:1;height:2px;background:rgba(255,255,255,.12);border-radius:1px;outline:none}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;border-radius:50%;background:var(--blue);cursor:pointer;border:2px solid #fff}
+.bar-row{margin-bottom:10px}
+.bar-label-row{display:flex;justify-content:space-between;font-size:12px;color:var(--silver);margin-bottom:5px;font-weight:400}
+.bar-label-row strong{color:rgba(255,255,255,.75);font-weight:500}
+.bar-bg{background:rgba(255,255,255,.05);border-radius:3px;height:26px;overflow:hidden}
+.bar-fill{height:100%;border-radius:3px;display:flex;align-items:center;padding-left:10px;font-size:11px;font-weight:500;transition:width 1s cubic-bezier(.4,0,.2,1)}
+.bar-local{background:rgba(160,50,30,.75);color:rgba(255,200,190,.9)}
+.bar-po{background:var(--blue);color:rgba(200,225,255,.9)}
+.saving-row{display:flex;justify-content:space-between;align-items:center;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,.08);margin-top:.75rem}
+.saving-label{font-size:13px;color:var(--silver);font-weight:400}
+.saving-val{font-family:var(--serif);font-size:38px;color:#fff;font-style:normal;letter-spacing:.02em}
+
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:6px;overflow:hidden;margin-bottom:2.5rem}
+.why-card{background:#fff;padding:1.5rem;transition:background .2s}
+.why-card:hover{background:var(--silver-xl)}
+.why-icon{width:32px;height:32px;border-radius:4px;background:var(--silver-xl);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin-bottom:.75rem}
+.why-icon svg{width:16px;height:16px;stroke:var(--blue);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.why-title{font-size:12px;font-weight:600;color:var(--navy);margin-bottom:.35rem;text-transform:uppercase;letter-spacing:.04em}
+.why-desc{font-size:12px;color:var(--silver);line-height:1.65;font-weight:400}
+
+.test-block{background:var(--navy);border-radius:6px;padding:2rem 2.5rem;border-left:3px solid var(--blue)}
+.test-text{font-family:var(--sans);font-size:18px;color:#fff;font-style:italic;font-weight:300;line-height:1.65;margin-bottom:1rem}
+.test-input-wrap{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:.75rem 1rem}
+.test-input-wrap textarea{background:transparent;border:none;outline:none;font-size:14px;color:rgba(255,255,255,.5);width:100%;resize:none;font-family:var(--serif);font-style:italic;line-height:1.65}
+
+.tl{display:flex;flex-direction:column;margin-bottom:3rem}
+.tl-item{display:grid;grid-template-columns:20px 1fr;gap:1.25rem}
+.tl-spine{display:flex;flex-direction:column;align-items:center}
+.tl-dot{width:10px;height:10px;border-radius:50%;background:var(--blue);flex-shrink:0;margin-top:4px}
+.tl-line{width:1px;flex:1;background:var(--silver-l);min-height:28px}
+.tl-item:last-child .tl-line{display:none}
+.tl-body{padding-bottom:1.75rem}
+.tl-week{font-size:10px;font-weight:600;color:var(--blue);text-transform:uppercase;letter-spacing:.1em;margin-bottom:3px}
+.tl-title{font-size:15px;font-weight:500;color:var(--navy);margin-bottom:3px}
+.tl-detail{font-size:13px;color:var(--silver);line-height:1.65;font-weight:400}
+
+.cta-wrap{background:var(--navy);max-width:100%}
+.cta{max-width:960px;margin:0 auto;padding:5rem 2.5rem;text-align:center}
+.cta-logo{margin:0 auto 2rem;display:flex;justify-content:center}
+.cta-logo img{height:40px;object-fit:contain;filter:brightness(0) invert(1) opacity(.5)}
+.cta h2{font-family:var(--serif);font-size:clamp(36px,4.5vw,60px);color:#fff;font-style:normal;margin-bottom:.75rem;font-weight:400;letter-spacing:.02em}
+.cta p{font-size:15px;color:var(--silver);margin-bottom:2.5rem;line-height:1.8;max-width:500px;margin-left:auto;margin-right:auto;font-weight:400}
+.cta-btns{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;margin-bottom:2.5rem}
+.cta-btn{background:var(--blue);color:#fff;border:none;padding:13px 28px;border-radius:3px;font-size:12px;font-family:var(--sans);font-weight:600;cursor:pointer;letter-spacing:.08em;text-transform:uppercase;transition:opacity .2s}
+.cta-btn:hover{opacity:.85}
+.cta-btn.outline{background:transparent;border:1px solid rgba(255,255,255,.25);color:rgba(255,255,255,.6)}
+.cta-divider{width:36px;height:1px;background:rgba(255,255,255,.12);margin:0 auto 1.5rem}
+.cta-contact{font-size:13px;color:var(--silver);line-height:1.9;font-weight:400}
+.cta-contact strong{color:rgba(255,255,255,.6);font-weight:500}
+
+footer{background:rgba(0,0,0,.35);padding:1.25rem 2.5rem;display:flex;justify-content:space-between;align-items:center}
+footer p{font-size:11px;color:rgba(255,255,255,.2);letter-spacing:.04em}
+
+.fade-in{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
+.fade-in.visible{opacity:1;transform:none}
+
+@media(max-width:680px){
+  .pain-grid,.sol-grid,.price-row,.why-grid{grid-template-columns:1fr}
+  .hero-fields{grid-template-columns:1fr}
+  .hero-stats{flex-direction:column;gap:1.25rem}
+  nav{padding:0 1.25rem}
+  .nav-links{display:none}
+  section,.hero,.invest,.cta{padding-left:1.25rem;padding-right:1.25rem}
+  .pillars{flex-direction:column;gap:.75rem}
+  .pillar-sep{display:none}
+}
+
+.guarantee-wrap{background:#fff;border:1px solid var(--border);border-radius:8px;padding:2.5rem;margin-bottom:2.5rem;position:relative;overflow:hidden}
+.guarantee-wrap::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--blue)}
+.guarantee-icon{width:48px;height:48px;border-radius:50%;background:rgba(42,107,222,.08);border:1px solid rgba(42,107,222,.2);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem}
+.guarantee-icon svg{width:22px;height:22px;stroke:var(--blue);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.guarantee-title{font-family:var(--serif);font-size:32px;color:var(--navy);margin-bottom:.6rem;font-weight:400;letter-spacing:.02em}
+.guarantee-body{font-size:14px;color:var(--silver);line-height:1.8;max-width:560px;margin-bottom:1.5rem}
+.guarantee-badges{display:flex;gap:.75rem;flex-wrap:wrap}
+.gbadge{display:flex;align-items:center;gap:6px;border:1px solid rgba(42,107,222,.2);background:rgba(42,107,222,.05);color:var(--blue);font-size:11px;font-weight:600;padding:6px 12px;border-radius:3px;letter-spacing:.04em;text-transform:uppercase}
+.gbadge::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--blue);flex-shrink:0}
+.faq-list{display:flex;flex-direction:column;gap:0;border:1px solid var(--border);border-radius:6px;overflow:hidden;background:#fff}
+.faq-item{border-bottom:1px solid var(--border);cursor:pointer;transition:background .15s}
+.faq-item:last-child{border-bottom:none}
+.faq-item:hover{background:var(--silver-xl)}
+.faq-item.open{background:var(--silver-xl)}
+.faq-q{padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:14px;font-weight:500;color:var(--navy)}
+.faq-chev{color:var(--silver-l);font-size:11px;transition:transform .25s;flex-shrink:0}
+.faq-item.open .faq-chev{transform:rotate(180deg);color:var(--blue)}
+.faq-a{display:none;padding:0 1.5rem 1.25rem;font-size:13px;color:var(--silver);line-height:1.75}
+.faq-item.open .faq-a{display:block}
+.cta-booking{display:inline-flex;align-items:center;gap:10px;background:var(--blue);color:#fff;padding:14px 28px;border-radius:3px;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;border:none;font-family:var(--sans);transition:opacity .2s;text-decoration:none}
+.cta-booking:hover{opacity:.85}
+.cta-booking svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:6px;overflow:hidden;margin-bottom:2.5rem}
+.proof-card{background:#fff;padding:1.75rem;transition:background .2s}
+.proof-card:hover{background:var(--silver-xl)}
+.proof-quote{font-family:var(--sans);font-size:15px;color:var(--navy);line-height:1.65;font-style:italic;font-weight:300;margin-bottom:1rem}
+.proof-attr{font-size:11px;color:var(--blue);letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+.proof-result{display:inline-block;margin-top:.75rem;background:rgba(42,107,222,.07);border:1px solid rgba(42,107,222,.15);color:var(--blue);font-size:11px;font-weight:600;padding:4px 10px;border-radius:2px;letter-spacing:.04em}
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:6px;overflow:hidden;margin-bottom:2.5rem}
+.stat-cell{background:#fff;padding:1.5rem;text-align:center}
+.stat-num{font-family:var(--serif);font-size:36px;color:var(--navy);font-weight:400;line-height:1;display:block;margin-bottom:.35rem}
+.stat-label{font-size:11px;color:var(--silver);text-transform:uppercase;letter-spacing:.07em;font-weight:400}
+.urgency-bar{background:rgba(42,107,222,.06);border:1px solid rgba(42,107,222,.15);border-radius:6px;padding:1.25rem 1.75rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:2.5rem;flex-wrap:wrap}
+.urgency-left{flex:1}
+.urgency-text{font-size:13px;color:var(--navy);font-weight:500}
+.urgency-sub{font-size:12px;color:var(--silver);margin-top:2px}
+.urgency-countdown{font-family:var(--serif);font-size:28px;color:var(--blue);font-style:italic;white-space:nowrap}
+@media(max-width:680px){.proof-grid,.stat-row{grid-template-columns:1fr}.urgency-bar{flex-direction:column;text-align:center}#meet-rhys .fade-in{grid-template-columns:1fr!important}}
+
+
+.fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:6px;overflow:hidden;margin-bottom:2.5rem}
+.fit-col{background:#fff;padding:2rem}
+.fit-col.yes{border-top:3px solid #1D9E75}
+.fit-col.no{border-top:3px solid #e03e3e}
+.fit-heading{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.25rem;display:flex;align-items:center;gap:8px}
+.fit-heading.yes{color:#0F6E56}
+.fit-heading.no{color:#993c1d}
+.fit-heading::before{content:'';width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.fit-heading.yes::before{background:#1D9E75}
+.fit-heading.no::before{background:#e03e3e}
+.fit-item{display:flex;align-items:flex-start;gap:10px;margin-bottom:.85rem;font-size:13px;color:var(--silver);line-height:1.6}
+.fit-item::before{content:'';width:5px;height:5px;border-radius:50%;flex-shrink:0;margin-top:6px}
+.fit-col.yes .fit-item::before{background:#1D9E75}
+.fit-col.no .fit-item::before{background:#e03e3e}
+.fit-item strong{color:var(--navy);font-weight:500}
+.loom-wrap{background:var(--navy);border-radius:6px;overflow:hidden;margin-bottom:2.5rem;position:relative;cursor:pointer}
+.loom-thumb{width:100%;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;background:var(--navy);position:relative}
+.loom-thumb img{width:100%;height:100%;object-fit:cover;opacity:.5;position:absolute;inset:0}
+.loom-play{width:64px;height:64px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;position:relative;z-index:1;transition:transform .2s}
+.loom-wrap:hover .loom-play{transform:scale(1.08)}
+.loom-play svg{width:24px;height:24px;fill:#fff;margin-left:4px}
+.loom-label{padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between}
+.loom-name{font-size:13px;color:#fff;font-weight:500}
+.loom-sub{font-size:11px;color:var(--silver);margin-top:2px}
+.loom-badge{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);border:1px solid rgba(42,107,222,.3);padding:4px 10px;border-radius:2px}
+.roi3-wrap{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:2rem}
+.roi3-sliders{margin-bottom:2rem}
+.roi3-row{display:flex;align-items:center;gap:1rem;margin-bottom:.85rem}
+.roi3-label{font-size:12px;color:var(--silver);min-width:160px;font-weight:400}
+.roi3-val{font-size:13px;font-weight:600;color:#fff;min-width:90px;text-align:right}
+.year-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.08);border-radius:6px;overflow:hidden;margin-bottom:1.5rem}
+.year-col{background:rgba(255,255,255,.04);padding:1.25rem;text-align:center}
+.year-col.best{background:rgba(42,107,222,.15);border:1px solid rgba(42,107,222,.3)}
+.year-label{font-size:10px;color:var(--silver);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.5rem}
+.year-saving{font-family:var(--serif);font-size:32px;color:#fff;font-style:normal;display:block;line-height:1;letter-spacing:.02em}
+.year-local{font-size:11px;color:var(--silver);margin-top:.35rem}
+.roi3-total{display:flex;justify-content:space-between;align-items:center;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,.08)}
+.roi3-total-label{font-size:13px;color:var(--silver)}
+.roi3-total-val{font-family:var(--serif);font-size:44px;color:#fff;font-style:normal;letter-spacing:.02em}
+.roi3-note{font-size:11px;color:rgba(255,255,255,.3);margin-top:.75rem;font-style:italic}
+@media(max-width:680px){.fit-grid{grid-template-columns:1fr}.year-cols{grid-template-columns:1fr}}
+
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo"><img src="assets/image_1.jpg" alt="Premier Outsourcing"></div>
+  <div class="nav-links">
+    <a href="#challenge">Challenge</a>
+    <a href="#solution">Solution</a>
+    <a href="#investment">Investment</a>
+    <a href="#why-us">Why Us</a>
+    <a href="#next-steps">Next Steps</a>
+  </div>
+  <button class="nav-cta" onclick="window.print()">Save PDF</button>
+</nav>
+
+<div class="hero-wrap">
+  <div class="hero">
+    <div class="hero-badge">Staffing Proposal — Strata Management</div>
+    <h1>Building your<br><em>offshore support team</em></h1>
+    <p class="hero-sub">A fully managed staffing solution built for Australian strata management businesses ready to scale without the overhead.</p>
+    <div class="hero-div"></div>
+    <div class="hero-fields">
+      <div class="hf"><label>Prepared for</label><input placeholder="Client business name" id="client-name"/></div>
+      <div class="hf"><label>Contact name</label><input placeholder="Decision maker name" id="contact-name"/></div>
+      <div class="hf"><label>Date</label><input type="date" id="prop-date"/></div>
+      <div class="hf"><label>Valid until</label><input placeholder="30 days from issue" id="valid"/></div>
+    </div>
+    <div class="hero-stats">
+      <div><span class="hs-num">5.0 &#9733;</span><span class="hs-label">Google rating · 30+ reviews</span></div>
+      <div><span class="hs-num">127</span><span class="hs-label">Professionals placed to date</span></div>
+      <div><span class="hs-num">Since 2014</span><span class="hs-label">Australian-owned & operated</span></div>
+      <div><span class="hs-num">23</span><span class="hs-label">Active client businesses</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="pillars-band">
+  <div class="pillars">
+    <div class="pillar"><div class="pillar-title">People.</div><div class="pillar-desc">We hire great people and build strong teams.</div></div>
+    <div class="pillar-sep"></div>
+    <div class="pillar"><div class="pillar-title">Process.</div><div class="pillar-desc">We implement smart systems that scale.</div></div>
+    <div class="pillar-sep"></div>
+    <div class="pillar"><div class="pillar-title">Performance.</div><div class="pillar-desc">We drive results that grow your business.</div></div>
+  </div>
+</div>
+
+
+<div class="divider-full"></div>
+
+<section id="fit">
+  <div class="fade-in">
+    <p class="eyebrow">Honesty first</p>
+    <h2 class="sec-title">Is this the<br><em>right fit for you?</em></h2>
+    <div class="sec-div"></div>
+    <p class="sec-body">We'd rather be upfront than waste your time. Premier Outsourcing works exceptionally well for some businesses — and genuinely isn't the right move for others. Here's how to tell the difference.</p>
+  </div>
+  <div class="fit-grid fade-in">
+    <div class="fit-col yes">
+      <div class="fit-heading yes">This is a great fit if you are...</div>
+      <div class="fit-item"><span><strong>A growing strata firm</strong> feeling the pressure of a tight local labour market — good people are hard to find and expensive to keep.</span></div>
+      <div class="fit-item"><span><strong>A director or principal</strong> spending too much time in the operational weeds — inbox management, levy notices, maintenance follow-ups — instead of building the business.</span></div>
+      <div class="fit-item"><span><strong>A business with repeatable admin processes</strong> that could be documented, delegated, and handled consistently by a dedicated coordinator.</span></div>
+      <div class="fit-item"><span><strong>Ready to invest 2–4 weeks</strong> in a proper onboarding — showing someone your systems, your standards, your way of doing things.</span></div>
+      <div class="fit-item"><span><strong>Looking to scale your portfolio</strong> without an immediate, equivalent increase in local headcount and overheads.</span></div>
+    </div>
+    <div class="fit-col no">
+      <div class="fit-heading no">This probably isn't right if you are...</div>
+      <div class="fit-item"><span><strong>Looking purely for the cheapest option.</strong> We're not the lowest-cost provider — we're the most supported one. If price is the only driver, we're not a match.</span></div>
+      <div class="fit-item"><span><strong>A solo operator</strong> without enough consistent, process-heavy work to keep a full-time coordinator genuinely busy and growing.</span></div>
+      <div class="fit-item"><span><strong>Not willing to invest in onboarding.</strong> Offshore staffing only works when the client takes the handover seriously. A hire without structure is a hire that underdelivers.</span></div>
+      <div class="fit-item"><span><strong>Expecting a set-and-forget solution.</strong> Great offshore teams are built, not bought. They need direction, feedback, and a manager who's engaged — even if that's just 15 minutes a day.</span></div>
+      <div class="fit-item"><span><strong>Needing someone hired overnight.</strong> Our process takes 3–4 weeks. We do it properly — screening, interviewing, onboarding — not just filling a seat fast.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="challenge">
+  <div class="fade-in">
+    <p class="eyebrow">The Challenge</p>
+    <h2 class="sec-title">We understand<br><em>your world</em></h2>
+    <div class="sec-div"></div>
+    <p class="sec-body">Strata management is one of Australia's most administration-intensive industries. As your portfolio grows, so does the pressure — more lots, more owners, more compliance, and higher expectations from every direction.</p>
+  </div>
+  <div class="pain-grid fade-in">
+    <div class="pain-item"><div class="pain-num">01</div><div class="pain-title">Admin Overload</div><div class="pain-desc">Correspondence and levy notices consuming manager time that should go to portfolio growth and new business</div></div>
+    <div class="pain-item"><div class="pain-num">02</div><div class="pain-title">Local Hiring Pain</div><div class="pain-desc">Good candidates are expensive, slow to find, and even harder to retain in today's Australian market</div></div>
+    <div class="pain-item"><div class="pain-num">03</div><div class="pain-title">Owner Response Gaps</div><div class="pain-desc">Queries going unanswered or delayed, eroding client trust and threatening your retention and reputation</div></div>
+    <div class="pain-item"><div class="pain-num">04</div><div class="pain-title">Growth Bottleneck</div><div class="pain-desc">Leaders trapped in day-to-day operations instead of winning new buildings and scaling the portfolio</div></div>
+  </div>
+  <div class="quote-block fade-in">
+    <p class="quote-text">"Most strata businesses don't have a talent problem. They have a capacity problem. The right offshore support team — properly managed — solves both."</p>
+    <p class="quote-attr">— Premier Outsourcing · Melbourne, Australia</p>
+  </div>
+</section>
+
+<div class="divider-full"></div>
+
+<section id="solution">
+  <div class="fade-in">
+    <p class="eyebrow">Our Recommendation</p>
+    <h2 class="sec-title">Your proposed<br><em>staffing solution</em></h2>
+    <div class="sec-div"></div>
+    <p class="sec-body">A dedicated offshore Strata Support Coordinator embedded into your daily operations — freeing your onshore managers to focus on what matters most.</p>
+  </div>
+  <div class="sol-grid fade-in">
+    <div class="sol-card"><div class="sol-label">Recommended Role</div><h3>Strata Support Coordinator</h3><p>Full-time · 40 hrs/week · Reports to strata manager</p></div>
+    <div class="sol-card"><div class="sol-label">Key Responsibilities</div><h3>Day-to-Day Operations</h3><p>Owner correspondence · Levy notices · Maintenance coordination · Inbox management · Data entry · Compliance tracking</p></div>
+    <div class="sol-card"><div class="sol-label">What This Frees You To Do</div><h3>Focus on Growth</h3><p>Win new buildings · Build owner relationships · Reduce after-hours load · Scale without payroll blowout</p></div>
+    <div class="sol-card"><div class="sol-label">Timeline to Hire</div><h3>Operational in 30 Days</h3><p>From signed agreement to your new team member being fully productive — within a single month</p></div>
+  </div>
+  <p class="eyebrow fade-in" style="margin-bottom:.85rem">Our Managed Process</p>
+  <div class="proc-list fade-in">
+    <div class="proc-item open" onclick="toggleProc(this)"><div class="proc-num-col"><div class="proc-num">01</div></div><div class="proc-body"><div class="proc-title">Role Scoping <span class="proc-chev">&#9662;</span></div><div class="proc-desc">We define the role, responsibilities, KPIs, and workflow fit specific to your strata operation. Nothing generic — everything tailored to your business.</div></div></div>
+    <div class="proc-item" onclick="toggleProc(this)"><div class="proc-num-col"><div class="proc-num">02</div></div><div class="proc-body"><div class="proc-title">Candidate Recruitment <span class="proc-chev">&#9662;</span></div><div class="proc-desc">We source, screen, and shortlist candidates based on communication skills, strata knowledge, attitude, and cultural fit — not just CVs.</div></div></div>
+    <div class="proc-item" onclick="toggleProc(this)"><div class="proc-num-col"><div class="proc-num">03</div></div><div class="proc-body"><div class="proc-title">Client Interview &amp; Selection <span class="proc-chev">&#9662;</span></div><div class="proc-desc">You interview shortlisted candidates and make the final call. Full control stays with you throughout the entire selection process.</div></div></div>
+    <div class="proc-item" onclick="toggleProc(this)"><div class="proc-num-col"><div class="proc-num">04</div></div><div class="proc-body"><div class="proc-title">Structured Onboarding <span class="proc-chev">&#9662;</span></div><div class="proc-desc">We coordinate setup, training handover, SOP implementation, and reporting structure — ensuring a smooth, productive launch from day one.</div></div></div>
+    <div class="proc-item" onclick="toggleProc(this)"><div class="proc-num-col"><div class="proc-num">05</div></div><div class="proc-body"><div class="proc-title">KPI Management &amp; Oversight <span class="proc-chev">&#9662;</span></div><div class="proc-desc">We track performance, run regular check-ins, and manage accountability — so your team member stays productive and motivated long term.</div></div></div>
+    <div class="proc-item" onclick="toggleProc(this)"><div class="proc-num-col"><div class="proc-num">06</div></div><div class="proc-body"><div class="proc-title">Ongoing Support &amp; Expansion <span class="proc-chev">&#9662;</span></div><div class="proc-desc">As confidence grows, we support expansion — adding roles, refining systems, and scaling your offshore team alongside your portfolio growth.</div></div></div>
+  </div>
+</section>
+
+<div class="invest-wrap">
+  <div class="invest" id="investment">
+    <div class="fade-in">
+      <p class="eyebrow">Investment</p>
+      <h2 class="sec-title">Clear,<br><em>transparent pricing</em></h2>
+      <div class="sec-div"></div>
+      <p class="sec-body">All pricing is fully managed — recruitment, onboarding, HR, payroll, and performance oversight included. No hidden fees. No surprises.</p>
+    </div>
+    <div class="price-row fade-in">
+      <div class="p-card"><div class="p-tier">Growth</div><div class="p-amt">$2,400</div><div class="p-period">per month · fully managed</div><div class="p-desc">1 dedicated staff member — core admin &amp; support roles</div><div class="p-feats"><div class="pf"><span class="pf-dot"></span><span>Full recruitment &amp; screening</span></div><div class="pf"><span class="pf-dot"></span><span>Structured onboarding</span></div><div class="pf"><span class="pf-dot"></span><span>KPI management included</span></div></div></div>
+      <div class="p-card featured"><div class="p-rec">Recommended</div><div class="p-tier">Scale</div><div class="p-amt">$2,900</div><div class="p-period">per month · fully managed</div><div class="p-desc">Specialist or experienced strata-specific staff</div><div class="p-feats"><div class="pf"><span class="pf-dot"></span><span>Everything in Growth</span></div><div class="pf"><span class="pf-dot"></span><span>Senior candidate sourcing</span></div><div class="pf"><span class="pf-dot"></span><span>Industry-specific placement</span></div></div></div>
+      <div class="p-card"><div class="p-tier">Enterprise</div><div class="p-amt">Custom</div><div class="p-period">bespoke proposal</div><div class="p-desc">Multi-staff teams &amp; department build-outs</div><div class="p-feats"><div class="pf"><span class="pf-dot"></span><span>Everything in Scale</span></div><div class="pf"><span class="pf-dot"></span><span>Team structure design</span></div><div class="pf"><span class="pf-dot"></span><span>Dedicated account manager</span></div></div></div>
+    </div>
+    <div class="roi3-wrap fade-in">
+      <div class="roi-heading" style="margin-bottom:1.5rem">3-year ROI projection — adjust to your situation</div>
+      <div class="roi3-sliders">
+        <div class="roi3-row"><span class="roi3-label">Local staff salary</span><input type="range" min="55000" max="120000" step="1000" value="75000" id="sal" oninput="calcROI3()"><span class="roi3-val" id="sal-out">$75,000</span></div>
+        <div class="roi3-row"><span class="roi3-label">On-costs (super, leave)</span><input type="range" min="10" max="30" step="1" value="20" id="oc" oninput="calcROI3()"><span class="roi3-val" id="oc-out">20%</span></div>
+        <div class="roi3-row"><span class="roi3-label">Portfolio growth rate</span><input type="range" min="5" max="40" step="5" value="20" id="gr" oninput="calcROI3()"><span class="roi3-val" id="gr-out">20%</span></div>
+      </div>
+      <div class="year-cols">
+        <div class="year-col">
+          <div class="year-label">Year 1</div>
+          <span class="year-saving" id="y1-saving">$0</span>
+          <div class="year-local">vs <span id="y1-local">$0</span> local cost</div>
+        </div>
+        <div class="year-col best">
+          <div class="year-label">Year 2 — with growth</div>
+          <span class="year-saving" id="y2-saving">$0</span>
+          <div class="year-local">vs <span id="y2-local">$0</span> local cost</div>
+        </div>
+        <div class="year-col">
+          <div class="year-label">Year 3 — compounding</div>
+          <span class="year-saving" id="y3-saving">$0</span>
+          <div class="year-local">vs <span id="y3-local">$0</span> local cost</div>
+        </div>
+      </div>
+      <div class="roi3-total">
+        <span class="roi3-total-label">Total 3-year saving</span>
+        <span class="roi3-total-val" id="total-saving">$0</span>
+      </div>
+      <p class="roi3-note">Growth assumption: local hire costs rise with salary inflation + additional headcount as portfolio grows. Premier Outsourcing cost stays fixed at your chosen plan.</p>
+    </div>
+  </div>
+</div>
+
+<section id="why-us">
+  <div class="fade-in" style="margin-bottom:2.5rem;border-radius:6px;overflow:hidden;background:var(--navy);border:1px solid rgba(255,255,255,.08)">
+    <video
+      id="intro-video"
+      autoplay
+      muted
+      playsinline
+      controls
+      preload="auto"
+      style="width:100%;display:block;max-height:480px;background:#000"
+      src="assets/video_1.mp4"
+    ></video>
+    <div style="padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem">
+      <div>
+        <div style="font-size:13px;color:#fff;font-weight:500">A personal message from Rhys Gordon</div>
+        <div style="font-size:11px;color:var(--silver);margin-top:2px">Sales Director · Premier Outsourcing · Melbourne</div>
+      </div>
+      <span class="loom-badge">Playing automatically</span>
+    </div>
+  </div>
+
+  <div class="fade-in">
+    <p class="eyebrow">Why Premier Outsourcing</p>
+    <h2 class="sec-title">What makes<br><em>us different</em></h2>
+    <div class="sec-div"></div>
+    <p class="sec-body">Most competitors place staff and disappear. We build high-performing offshore teams with local accountability and long-term success in mind.</p>
+  </div>
+  <div class="why-grid fade-in">
+    <div class="why-card"><div class="why-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="why-title">Australian-Owned &amp; Managed</div><div class="why-desc">Local accountability — you work with an Australian team who owns the outcome alongside you, not an offshore broker</div></div>
+    <div class="why-card"><div class="why-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div><div class="why-title">Strata-Specific Experience</div><div class="why-desc">We understand compliance pressures, communication demands, and the rhythms of strata — we hire accordingly</div></div>
+    <div class="why-card"><div class="why-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div class="why-title">Premium Candidate Quality</div><div class="why-desc">We prioritise communication, initiative, and professional attitude — not just technical skills and qualifications</div></div>
+    <div class="why-card"><div class="why-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><div class="why-title">KPI Management &amp; Oversight</div><div class="why-desc">Regular check-ins, performance reviews, and proactive support — accountability never stops after placement</div></div>
+    <div class="why-card"><div class="why-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><div class="why-title">Structured Onboarding</div><div class="why-desc">Setup, training, SOPs, and launch support — your hire is productive from day one, not month three</div></div>
+    <div class="why-card"><div class="why-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div class="why-title">4+ Year Avg Client Retention</div><div class="why-desc">Our clients stay because the model works. Reliable staff, local support, and measurable commercial outcomes</div></div>
+  </div>
+  <div class="fade-in">
+    <p class="eyebrow" style="margin-bottom:.85rem">What clients say</p>
+
+    <div style="background:#fff;border:1px solid var(--border);border-radius:6px;padding:1.75rem 2rem;display:flex;align-items:center;gap:2.5rem;margin-bottom:1px;flex-wrap:wrap">
+      <div style="text-align:center;min-width:80px">
+        <div style="font-family:var(--serif);font-size:52px;color:var(--navy);line-height:1;font-weight:400">5.0</div>
+        <div style="color:#f59e0b;font-size:18px;letter-spacing:2px;margin:.3rem 0">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div style="font-size:11px;color:var(--silver);text-transform:uppercase;letter-spacing:.07em">Google rating</div>
+      </div>
+      <div style="width:1px;background:var(--border);align-self:stretch;margin:0"></div>
+      <div style="flex:1;min-width:200px">
+        <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.4rem">
+          <div style="height:6px;flex:1;background:var(--silver-xl);border-radius:3px;overflow:hidden"><div style="width:100%;height:100%;background:#f59e0b;border-radius:3px"></div></div>
+          <span style="font-size:11px;color:var(--silver);min-width:20px">5★</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.4rem">
+          <div style="height:6px;flex:1;background:var(--silver-xl);border-radius:3px;overflow:hidden"><div style="width:5%;height:100%;background:#f59e0b;border-radius:3px"></div></div>
+          <span style="font-size:11px;color:var(--silver);min-width:20px">4★</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:.75rem">
+          <div style="height:6px;flex:1;background:var(--silver-xl);border-radius:3px;overflow:hidden"><div style="width:0%;height:100%;background:#f59e0b;border-radius:3px"></div></div>
+          <span style="font-size:11px;color:var(--silver);min-width:20px">3★</span>
+        </div>
+      </div>
+      <div style="width:1px;background:var(--border);align-self:stretch;margin:0"></div>
+      <div>
+        <div style="font-family:var(--serif);font-size:36px;color:var(--navy);line-height:1;font-weight:400">30+</div>
+        <div style="font-size:11px;color:var(--silver);text-transform:uppercase;letter-spacing:.07em;margin-top:.3rem">Verified Google reviews</div>
+      </div>
+      <div style="width:1px;background:var(--border);align-self:stretch;margin:0"></div>
+      <div>
+        <div style="font-family:var(--serif);font-size:36px;color:var(--navy);line-height:1;font-weight:400">5 yrs</div>
+        <div style="font-size:11px;color:var(--silver);text-transform:uppercase;letter-spacing:.07em;margin-top:.3rem">Longest client relationship</div>
+      </div>
+    </div>
+
+    <div class="proof-grid" style="margin-top:1px;margin-bottom:0">
+      <div class="proof-card">
+        <div style="color:#f59e0b;font-size:13px;letter-spacing:1px;margin-bottom:.75rem">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="proof-quote">"Premier Outsourcing has been an integral part of our business for over two years. A special mention to our terrific team who are incredibly polite, courteous and hard working."</p>
+        <p class="proof-attr">Verified Google Review · 2+ year client</p>
+      </div>
+      <div class="proof-card">
+        <div style="color:#f59e0b;font-size:13px;letter-spacing:1px;margin-bottom:.75rem">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="proof-quote">"I manage an Insurance Broking agency and have been working with Premier Outsourcing for over a year. The experience has been outstanding — it has significantly contributed to my business productivity."</p>
+        <p class="proof-attr">Verified Google Review · Insurance industry</p>
+      </div>
+      <div class="proof-card">
+        <div style="color:#f59e0b;font-size:13px;letter-spacing:1px;margin-bottom:.75rem">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="proof-quote">"Premier Outsourcing delivers exceptional service. From the beginning, their team was professional, efficient, and dedicated. I highly recommend Premier Outsourcing for their superb service."</p>
+        <p class="proof-attr">Verified Google Review · Insurance industry</p>
+      </div>
+    </div>
+    <div style="background:#fff;border:1px solid var(--border);border-top:none;border-radius:0 0 6px 6px;padding:1rem 1.75rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem">
+      <span style="font-size:12px;color:var(--silver)">All reviews independently verified on Google Business Profile</span>
+      <a href="https://g.co/kgs/premieroutsourcing" target="_blank" style="font-size:11px;font-weight:600;color:var(--blue);letter-spacing:.06em;text-transform:uppercase;text-decoration:none">Read all reviews &#8599;</a>
+    </div>
+    <div style="height:2.5rem"></div>
+  </div>
+</section>
+
+<div class="divider-full"></div>
+
+<section id="next-steps">
+  <div class="fade-in">
+    <p class="eyebrow">Next Steps</p>
+    <h2 class="sec-title">Your first<br><em>30 days</em></h2>
+    <div class="sec-div"></div>
+    <p class="sec-body">Getting started is straightforward. Once you're ready to proceed, here's exactly what happens next.</p>
+  </div>
+  <div class="tl fade-in">
+    <div class="tl-item"><div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div><div class="tl-body"><div class="tl-week">Week 1</div><div class="tl-title">Agreement signed + role brief confirmed</div><div class="tl-detail">We kick off recruitment immediately — no delays, no waiting periods.</div></div></div>
+    <div class="tl-item"><div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div><div class="tl-body"><div class="tl-week">Weeks 1–2</div><div class="tl-title">Candidate sourcing &amp; screening</div><div class="tl-detail">We shortlist 2–3 candidates matched to your business, culture, and strata experience requirements.</div></div></div>
+    <div class="tl-item"><div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div><div class="tl-body"><div class="tl-week">Weeks 2–3</div><div class="tl-title">Client interviews &amp; selection</div><div class="tl-detail">You interview shortlisted candidates and choose your preferred hire. Full control stays with you.</div></div></div>
+    <div class="tl-item"><div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div><div class="tl-body"><div class="tl-week">Weeks 3–4</div><div class="tl-title">Onboarding &amp; launch</div><div class="tl-detail">Setup, training handover, SOP implementation, and first-week support — all coordinated by us.</div></div></div>
+    <div class="tl-item"><div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div><div class="tl-body"><div class="tl-week">Month 2+</div><div class="tl-title">Operational &amp; growing</div><div class="tl-detail">Your offshore team member is embedded, performing, and delivering measurable results to your business.</div></div></div>
+  </div>
+</section>
+
+
+<div class="divider-full"></div>
+
+<section id="guarantee">
+  <div class="fade-in">
+    <p class="eyebrow">Our commitment to you</p>
+    <h2 class="sec-title">We stand behind<br><em>every placement</em></h2>
+    <div class="sec-div"></div>
+    <p class="sec-body">Outsourcing is a big decision. We've made it our job to make it a safe one. If your hire isn't working out in the first 60 days, we replace them — at no cost to you.</p>
+  </div>
+  <div class="guarantee-wrap fade-in">
+    <div class="guarantee-icon">
+      <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+    </div>
+    <h3 class="guarantee-title">The Premier Promise</h3>
+    <p class="guarantee-body">If you're not satisfied with your offshore team member within the first 60 days — for any reason — we will find and onboard a replacement at zero additional cost. No arguments, no fine print. We're based in Melbourne. You know where to find us.</p>
+    <div class="guarantee-badges">
+      <span class="gbadge">60-day free replacement</span>
+      <span class="gbadge">Australian-owned & accountable</span>
+      <span class="gbadge">No lock-in contracts</span>
+      <span class="gbadge">References on request</span>
+    </div>
+  </div>
+
+  <div class="fade-in">
+    <p class="eyebrow" style="margin-bottom:.85rem">Common questions</p>
+    <div class="faq-list">
+      <div class="faq-item open" onclick="toggleFaq(this)">
+        <div class="faq-q">Do your offshore staff understand Australian strata? <span class="faq-chev">&#9662;</span></div>
+        <div class="faq-a">Honestly — strata-specific knowledge is something we build together with you during onboarding, not something we assume. We hire for strong communication skills, professional attitude, and administrative capability. Your SOPs, your systems, your way of working are then built into how they operate from day one. Think of it like any new hire — except Rhys and the team are alongside you the whole way to make sure they get up to speed fast. Most clients find their coordinator is handling core tasks confidently within 2–3 weeks.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">What happens if the hire doesn't work out? <span class="faq-chev">&#9662;</span></div>
+        <div class="faq-a">We replace them — free of charge, within 60 days of placement. Beyond 60 days, if performance issues arise, we work with you to manage them directly. Our ongoing KPI oversight means problems rarely go unnoticed. In the rare case a placement hasn't been the right fit, we've always made it right. We're a Melbourne business — our reputation depends on it.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">What about time zones — when are they available? <span class="faq-chev">&#9662;</span></div>
+        <div class="faq-a">Your offshore coordinator works your hours — Australian business hours, your time zone. This isn't a call centre model. They're a dedicated member of your team, sitting at a desk during your working day, available on your tools (email, Teams, Slack, your PM software — whatever you use). Owners and residents won't know the difference.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">My team might push back — how do we handle internal resistance? <span class="faq-chev">&#9662;</span></div>
+        <div class="faq-a">This is the most common concern we hear — and it almost always disappears within the first month. The key is framing: this person isn't replacing anyone on your team. They're taking the work nobody wanted — the inbox overflow, the data entry, the maintenance follow-ups. Your local team gets their time back. Once that happens, they become the biggest advocates for the model.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Is $2,900/month really all-inclusive? What's not covered? <span class="faq-chev">&#9662;</span></div>
+        <div class="faq-a">The monthly fee covers recruitment, onboarding, HR, payroll, KPI management, and ongoing support. The only thing not included is any software licences you want to give them access to (your strata management system, etc.) — same as any employee. No setup fees, no recruitment surcharges, no surprise invoices.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">How is Premier different from a cheaper offshore platform I found online? <span class="faq-chev">&#9662;</span></div>
+        <div class="faq-a">The difference is accountability. Offshore freelancer platforms give you a worker and walk away. We're an Australian business, run from Melbourne, with our reputation tied directly to your outcome. We stay involved after placement — ongoing check-ins, KPI reviews, and performance management are part of the service. When something goes wrong (and occasionally it does), you have an Australian team picking up the phone, not a ticket system in another country.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider-full"></div>
+
+<div class="divider-full"></div>
+
+<section id="meet-rhys">
+  <div class="fade-in" style="display:grid;grid-template-columns:1fr 1.4fr;gap:3rem;align-items:center">
+    <div style="position:relative">
+      <img src="assets/image_1.png" alt="Rhys Gordon — Sales Director, Premier Outsourcing" style="width:100%;border-radius:6px;display:block;object-fit:cover;object-position:top center;max-height:480px"/>
+      <div style="position:absolute;bottom:1.25rem;left:1.25rem;background:var(--blue);color:#fff;padding:8px 14px;border-radius:3px;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase">Melbourne, Australia</div>
+    </div>
+    <div>
+      <p class="eyebrow">Your point of contact</p>
+      <h2 class="sec-title">Meet <em>Rhys Gordon</em></h2>
+      <div class="sec-div"></div>
+      <p style="font-size:13px;font-weight:600;color:var(--blue);letter-spacing:.06em;text-transform:uppercase;margin-bottom:1.25rem">Sales Director · Premier Outsourcing</p>
+      <p style="font-size:15px;color:var(--silver);line-height:1.85;margin-bottom:1rem;font-weight:300">As Sales Director at Premier Outsourcing, I work closely with Australian businesses to deliver tailored offshore staffing solutions that create efficiency, reduce overheads, and support long-term growth.</p>
+      <p style="font-size:15px;color:var(--silver);line-height:1.85;margin-bottom:1rem;font-weight:300">I personally guide clients through the entire process — from the initial consultation and workforce planning stage through to recruitment, onboarding, and ongoing support after employment. My focus is to ensure every placement is aligned with your business goals and delivers lasting value.</p>
+      <p style="font-size:15px;color:var(--silver);line-height:1.85;margin-bottom:2rem;font-weight:300">My priority is to provide a seamless, professional experience while helping your business secure the right people, improve performance, and scale with confidence.</p>
+      <div style="display:flex;gap:.75rem;flex-wrap:wrap">
+        <a href="https://calendly.com/rhysgordon" target="_blank" class="cta-booking" style="font-size:11px;padding:10px 20px">
+          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Book a call with Rhys
+        </a>
+        <a href="mailto:rhys@premieroutsourcing.com.au" style="display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);color:var(--navy);padding:10px 20px;border-radius:3px;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;font-family:var(--sans);transition:background .2s" onmouseover="this.style.background='var(--silver-xl)'" onmouseout="this.style.background='transparent'">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          rhys@premieroutsourcing.com.au
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider-full"></div>
+
+<div class="cta-wrap">
+  <div class="cta">
+    <div class="cta-logo"><img src="assets/image_2.jpg" alt="Premier Outsourcing"></div>
+    <h2>Ready to build your team?</h2>
+    <p>The fastest way to move forward is a 20-minute call with Rhys. No pressure, no script — just an honest conversation about whether this is the right fit for your business.</p>
+    <div class="urgency-bar" style="max-width:560px;margin:0 auto 2.5rem">
+      <div class="urgency-left">
+        <div class="urgency-text">This proposal is valid for 30 days</div>
+        <div class="urgency-sub">Placement slots are limited each month — early enquiries are prioritised</div>
+      </div>
+      <div class="urgency-countdown" id="days-left">30 days</div>
+    </div>
+    <div class="cta-btns">
+      <a class="cta-booking" href="https://calendly.com/rhysgordon" target="_blank">
+        <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Book a call with Rhys
+      </a>
+      <button class="cta-btn outline" onclick="window.location.href='mailto:rhys@premieroutsourcing.com.au?subject=Re: Strata Staffing Proposal'">Send an email instead</button>
+      <button class="cta-btn outline" onclick="window.print()">Save as PDF</button>
+    </div>
+    <div class="cta-divider"></div>
+    <div class="cta-contact"><strong>Rhys Gordon</strong> · Director of Sales<br>Premier Outsourcing · Melbourne, Australia<br>rhys@premieroutsourcing.com.au<br><br><em style="font-size:11px;color:rgba(255,255,255,.3)">Australian-owned. Locally accountable. Offshore expertise.</em></div>
+  </div>
+</div>
+
+<div class="pillars-band">
+  <div class="pillars">
+    <div class="pillar"><div class="pillar-title">People.</div><div class="pillar-desc">We hire great people and build strong teams.</div></div>
+    <div class="pillar-sep"></div>
+    <div class="pillar"><div class="pillar-title">Process.</div><div class="pillar-desc">We implement smart systems that scale.</div></div>
+    <div class="pillar-sep"></div>
+    <div class="pillar"><div class="pillar-title">Performance.</div><div class="pillar-desc">We drive results that grow your business.</div></div>
+  </div>
+</div>
+
+<footer>
+  <p>© Premier Outsourcing · Australian-Owned &amp; Managed · Melbourne, Australia</p>
+  <p>Offshore Staffing Solutions That Drive Results</p>
+</footer>
+
+<script>
+function toggleProc(el){const o=el.classList.contains("open");document.querySelectorAll(".proc-item").forEach(i=>i.classList.remove("open"));if(!o)el.classList.add("open")}
+function fmt(n){return"$"+Math.round(n).toLocaleString()}
+function calcROI3(){
+  var s=parseInt(document.getElementById("sal").value);
+  var oc=parseInt(document.getElementById("oc").value)/100;
+  var gr=parseInt(document.getElementById("gr").value)/100;
+  var po=34800;
+  var y1local=Math.round(s*(1+oc));
+  var y2local=Math.round(y1local*(1+gr)*(1+0.03));
+  var y3local=Math.round(y2local*(1+gr)*(1+0.03));
+  var y1sv=y1local-po;
+  var y2sv=y2local-po;
+  var y3sv=y3local-po;
+  var total=y1sv+y2sv+y3sv;
+  document.getElementById("sal-out").textContent=fmt(s);
+  document.getElementById("oc-out").textContent=Math.round(oc*100)+"%";
+  document.getElementById("gr-out").textContent=Math.round(gr*100)+"%";
+  document.getElementById("y1-saving").textContent=fmt(y1sv);
+  document.getElementById("y1-local").textContent=fmt(y1local)+" local";
+  document.getElementById("y2-saving").textContent=fmt(y2sv);
+  document.getElementById("y2-local").textContent=fmt(y2local)+" local";
+  document.getElementById("y3-saving").textContent=fmt(y3sv);
+  document.getElementById("y3-local").textContent=fmt(y3local)+" local";
+  document.getElementById("total-saving").textContent=fmt(total);
+}
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add("visible")})},{threshold:0.1});
+document.querySelectorAll(".fade-in").forEach(el=>obs.observe(el));
+setTimeout(calcROI3,400);
+document.getElementById("prop-date").value=new Date().toISOString().split("T")[0];
+function toggleFaq(el){const o=el.classList.contains("open");document.querySelectorAll(".faq-item").forEach(i=>i.classList.remove("open"));if(!o)el.classList.add("open")}
+(function(){
+  var propDate=new Date();
+  var expiry=new Date(propDate);expiry.setDate(expiry.getDate()+30);
+  var diff=Math.max(0,Math.round((expiry-new Date())/(1000*60*60*24)));
+  var el=document.getElementById("days-left");
+  if(el)el.textContent=diff+" day"+(diff!==1?"s":"")+" remaining";
+})();
+</script>
+</body>
+</html>
